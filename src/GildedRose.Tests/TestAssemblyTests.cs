@@ -1,3 +1,4 @@
+using FluentAssertions;
 using NUnit.Framework;
 
 namespace GildedRose.Tests
@@ -5,9 +6,10 @@ namespace GildedRose.Tests
     [TestFixture]
     public class TestAssemblyTests
     {
+        [Test]
         public void TestTheTruth()
         {
-            Assert.IsTrue(true);
+            true.Should().BeTrue();
         }
     }
 }
